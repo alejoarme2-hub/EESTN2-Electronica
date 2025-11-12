@@ -183,22 +183,35 @@
   </section>
 
   <section>
-    <h2 class="orange">Dejá tus preguntas o comentarios</h2>
-    <p>Si querés más información sobre la especialidad o tenés alguna duda, completá este breve formulario y te responderemos a la brevedad.</p>
+   <section id="contacto" class="py-16 bg-gradient-to-r from-orange-500 to-blue-600 text-white">
+  <div class="container mx-auto text-center px-6">
+    <h2 class="text-4xl font-bold mb-4 text-white drop-shadow-lg">Dejá tus preguntas</h2>
+    <p class="mb-8 text-lg text-gray-100">Enviá tu nombre, correo y tu consulta o comentario.</p>
 
-    <form action="https://formspree.io/f/abcdxyz" method="POST">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required />
-
-      <label for="email">Correo electrónico:</label>
-      <input type="email" id="email" name="_replyto" required />
-
-      <button type="submit">Enviar</button>
+    <form action="https://formspree.io/f/mnnlqkpl" method="POST" 
+          class="max-w-md mx-auto bg-black/80 p-8 rounded-2xl shadow-2xl border border-orange-500 backdrop-blur">
+      
+      <input type="text" name="nombre" placeholder="Tu nombre" 
+             class="w-full p-3 mb-4 bg-transparent border-b-2 border-orange-400 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 transition" required>
+      
+      <input type="email" name="correo" placeholder="Tu correo electrónico" 
+             class="w-full p-3 mb-4 bg-transparent border-b-2 border-orange-400 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 transition" required>
+      
+      <textarea name="mensaje" placeholder="Pregunta / Comentario" 
+                class="w-full p-3 mb-6 bg-transparent border-b-2 border-orange-400 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 transition h-32 resize-none" required></textarea>
+      
+      <button type="submit" 
+              class="w-full bg-gradient-to-r from-orange-500 to-blue-600 hover:from-orange-600 hover:to-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 shadow-lg">
+        Enviar
+      </button>
     </form>
-  </section>
+  </div>
+</section>
+
 
   <footer>
     <p>&copy; 2025 EEST N°2 "Tomás Espora" - Especialidad en Electrónica</p>
   </footer>
 </body>
 </html>
+
